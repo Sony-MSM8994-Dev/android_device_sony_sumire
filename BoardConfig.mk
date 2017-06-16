@@ -53,7 +53,6 @@ WIFI_BUS := PCIE
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_sumire
-TARGET_UNIFIED_DEVICE := true
 
 # Inherit from the proprietary version
 -include vendor/sony/sumire/BoardConfigVendor.mk

@@ -56,20 +56,20 @@ static void import_kernel_nv(const std::string& key,
             property_set("ro.telephony.default_network", "9,1");
             property_set("ro.semc.product.model", "E6683");
             property_set("ro.semc.product.name", "Xperia Z5 Dual");
-            property_set("ro.product.model", "E6683");
-            property_set("ro.product.name", "sumire_dsds");
-            property_set("ro.product.device", "sumire_dsds");
-            property_set("ro.build.description", "sumire_dsds-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
-            property_set("ro.build.fingerprint", "Sony/sumire_dsds/sumire_dsds:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
+            property_override("ro.product.model", "E6683");
+            property_override("ro.product.name", "sumire_dsds");
+            property_override("ro.product.device", "sumire_dsds");
+            property_override("ro.build.description", "sumire_dsds-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
+            property_override("ro.build.fingerprint", "Sony/sumire_dsds/sumire_dsds:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
         } else {
             property_set("ro.telephony.default_network", "9");
             property_set("ro.semc.product.model", "E6653");
             property_set("ro.semc.product.name", "Xperia Z5");
-            property_set("ro.product.model", "E6653");
-            property_set("ro.product.name", "sumire");
-            property_set("ro.product.device", "sumire");
-            property_set("ro.build.description", "sumire-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
-            property_set("ro.build.fingerprint", "Sony/sumire/sumire:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
+            property_override("ro.product.model", "E6653");
+            property_override("ro.product.name", "sumire");
+            property_override("ro.product.device", "sumire");
+            property_override("ro.build.description", "sumire-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
+            property_override("ro.build.fingerprint", "Sony/sumire/sumire:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
         }
     }
 }
