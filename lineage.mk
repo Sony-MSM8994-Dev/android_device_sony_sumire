@@ -17,6 +17,6 @@
 $(call inherit-product, device/sony/sumire/full_sumire.mk)
 
 # Inherit some common CM stuff
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_sumire
