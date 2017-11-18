@@ -28,8 +28,8 @@ TARGET_OTA_ASSERT_DEVICE := E6633,E6653,sumire,sumire_dsds
 # Boot image/kernel
 TARGET_KERNEL_CONFIG := kitakami_sumire_defconfig
 
-# CM hardware
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
+# Lineage hardware
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
 
 # Partitions
