@@ -53,6 +53,13 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
     property_override(vendor_prop, value);
 }
 
+void property_override_triple(char const product_prop[], char const system_prop[], char const vendor_prop[], char const value[])
+{
+    property_override(product_prop, value);
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+}
+
 static void import_kernel_nv(const std::string& key,
         const std::string& value, bool for_emulator __attribute__((unused)))
 {
@@ -66,20 +73,20 @@ static void import_kernel_nv(const std::string& key,
             property_set("ro.telephony.default_network", "9,1");
             property_set("ro.semc.product.model", "E6683");
             property_set("ro.semc.product.name", "Xperia Z5 Dual");
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "E6683");
+            property_override_triple("ro.product.model", "ro.product.system.model", "ro.product.vendor.model", "E6683");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "sumire_dsds");
-            property_override_dual("ro.product.device", "ro.vendor.product.device", "sumire_dsds");
+            property_override_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "sumire_dsds");
             property_override("ro.build.description", "sumire_dsds-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/sumire_dsds/sumire_dsds:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
+            property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/sumire_dsds/sumire_dsds:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
         } else {
             property_set("ro.telephony.default_network", "9");
             property_set("ro.semc.product.model", "E6653");
             property_set("ro.semc.product.name", "Xperia Z5");
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "E6653");
+            property_override_triple("ro.product.model", "ro.product.system.model", "ro.product.vendor.model", "E6653");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "sumire");
-            property_override_dual("ro.product.device", "ro.vendor.product.device", "sumire");
+            property_override_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "sumire");
             property_override("ro.build.description", "sumire-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/sumire/sumire:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
+            property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/sumire/sumire:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
         }
     }
 }
