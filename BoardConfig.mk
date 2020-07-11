@@ -23,7 +23,7 @@ DEVICE_PATH := device/sony/sumire
 TARGET_USE_SDCLANG := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := E6633,E6653,sumire,sumire_dsds
+TARGET_OTA_ASSERT_DEVICE := E6603,E6633,E6653,E6683,sumire,sumire_dsds
 
 # Boot image/kernel
 TARGET_KERNEL_CONFIG := kitakami_sumire_defconfig
