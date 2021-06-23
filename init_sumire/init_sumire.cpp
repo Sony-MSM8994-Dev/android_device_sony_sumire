@@ -75,8 +75,8 @@ static void import_kernel_nv(const std::string& key,
             property_override_triple("ro.product.model", "ro.product.system.model", "ro.product.vendor.model", "E6683");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "sumire_dsds");
             property_override_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "sumire_dsds");
-            property_override("ro.build.description", "sumire_dsds-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
-            property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/sumire_dsds/sumire_dsds:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
+            property_override("ro.build.description", "E6683-user 7.1.1 32.4.A.1.54 3761073091 release-keys");
+            property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/E6683/E6683:7.1.1/32.4.A.1.54/3761073091:user/release-keys");
         } else {
             property_override("ro.telephony.default_network", "9");
             property_override("ro.semc.product.model", "E6653");
@@ -84,8 +84,8 @@ static void import_kernel_nv(const std::string& key,
             property_override_triple("ro.product.model", "ro.product.system.model", "ro.product.vendor.model", "E6653");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "sumire");
             property_override_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "sumire");
-            property_override("ro.build.description", "sumire-user 7.1.1 N-MR1-KITAKAMI-170609-1025 1 dev-keys");
-            property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/sumire/sumire:7.1.1/N-MR1-KITAKAMI-170609-1025/1:user/dev-keys");
+            property_override("ro.build.description", "E6653-user 7.1.1 32.4.A.1.54 3761073091 release-keys");
+            property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/E6653/E6653:7.1.1/32.4.A.1.54/3761073091:user/release-keys");
         }
     }
 }
