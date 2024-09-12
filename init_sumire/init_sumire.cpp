@@ -34,8 +34,9 @@
 #include "vendor_init.h"
 #include "property_service.h"
 #include "util.h"
+#include "fstab/fstab.h"
 
-using android::init::ImportKernelCmdline;
+using android::fs_mgr::ImportKernelCmdline;
 
 constexpr auto LTALABEL_PATH = "/lta-label/pages/menu.htm";
 

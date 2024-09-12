@@ -19,6 +19,7 @@ cc_library_static {
     recovery_available: true,
     srcs: ["init_sumire.cpp"],
     include_dirs: [
+        "system/core/fs_mgr/libfstab/include",
         "system/core/init",
         "external/selinux/libselinux/include",
         "external/libcap/libcap/include"
